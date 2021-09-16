@@ -14,3 +14,17 @@ Miclase.imprimirx();
 console.log(`el valor obtenido de x es: ${Miclase.x}`);
 const miclase = new Miclase();
 miclase.imprimirx();
+
+class Miclase2{
+    private static x = 10;
+}
+console.log(Miclase2.x );
+
+class Base{
+    static saludar(){
+        console.log("hola mundo");
+    }
+}
+class derivada extends Base{}
+
+derivada.saludar();
